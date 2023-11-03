@@ -8,13 +8,13 @@ export default defineNuxtConfig({
 			title: "Nuxt Typescript",
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
-			// link: [
-			// 	{
-			// 		rel: "icon",
-			// 		type: "img/x-icon",
-			// 		href: "/favicon.svg",
-			// 	},
-			// ],
+			link: [
+				{
+					rel: "icon",
+					type: "img/x-icon",
+					href: "/favicon.ico",
+				},
+			],
 		},
 		pageTransition: { name: "page", mode: "out-in", appear: true },
 		layoutTransition: { name: "page", mode: "out-in", appear: true },
