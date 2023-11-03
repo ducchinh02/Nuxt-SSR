@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Nuxt-3 Typescript</title>
+		<link rel="stylesheet" href="/_nuxt/assets/css/tailwind.css" />
+		<link
+			rel="stylesheet"
+			href="/_nuxt/app.vue?vue&type=style&index=0&lang.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/_nuxt/node_modules/vite-plugin-vue-inspector/src/Overlay.vue?vue&type=style&index=0&scoped=31d1379f&lang.css"
+		/>
+		<link
+			rel="modulepreload"
+			as="script"
+			crossorigin
+			href="/_nuxt/F:/Project/nuxt-type/node_modules/nuxt/dist/app/entry.js"
+		/>
+		<script type="module" src="/_nuxt/@vite/client" crossorigin></script>
+		<script
+			type="module"
+			src="/_nuxt/F:/Project/nuxt-type/node_modules/nuxt/dist/app/entry.js"
+			crossorigin
+		></script>
+		<script id="unhead:payload" type="application/json">
+			{ "title": "Nuxt-3 Typescript" }
+		</script>
+		<script>
+			if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
+				Object.defineProperty(window, "__NUXT_DEVTOOLS_TIME_METRIC__", {
+					value: {},
+					enumerable: false,
+					configurable: true,
+				});
+			}
+			window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now();
+		</script>
+	</head>
+	<body>
+		<div id="__nuxt">
+			<div
+				class="bg-gray-200 font-sans leading-normal tracking-normal"
+				data-v-inspector="app.vue:2:2"
+			>
+				<nav
+					class="sticky inset-0 z-10 block h-max w-full max-w-full rounded-none border border-white/80 bg-white bg-opacity-80 py-2 px-4 text-white shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4"
+					data-v-inspector="components/Partials/NavBar.vue:2:2"
+				>
+					<div
+						class="flex items-center text-gray-900"
+						data-v-inspector="components/Partials/NavBar.vue:5:3"
+					>
+						<a
+							href="#"
+							class="mr-4 block cursor-pointer py-1.5 font-sans leading-relaxed text-inherit antialiased font-bold text-lg"
+							data-v-inspector="components/Partials/NavBar.vue:6:4"
+						>
+							Nuxt-Type
+						</a>
+						<ul
+							class="ml-auto mr-8 hidden items-center gap-6 lg:flex"
+							data-v-inspector="components/Partials/NavBar.vue:12:4"
+						>
+							<li
+								class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+								data-v-inspector="components/Partials/NavBar.vue:13:5"
+							>
+								<a
+									class="flex items-center"
+									href="#"
+									data-v-inspector="components/Partials/NavBar.vue:16:6"
+								>
+									Home
+								</a>
+							</li>
+							<li
+								class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+								data-v-inspector="components/Partials/NavBar.vue:18:5"
+							>
+								<a href="/users" class=""> User </a>
+							</li>
+						</ul>
+						<button
+							class="middle none center hidden rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+							type="button"
+							data-ripple-light="true"
+							data-v-inspector="components/Partials/NavBar.vue:24:4"
+						>
+							<span data-v-inspector="components/Partials/NavBar.vue:29:5"
+								>Buy Now</span
+							></button
+						><button
+							class="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+							data-collapse-target="sticky-navar"
+							data-v-inspector="components/Partials/NavBar.vue:31:4"
+						>
+							<span
+								class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform"
+								data-v-inspector="components/Partials/NavBar.vue:35:5"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									stroke="currentColor"
+									strokeWidth="2"
+									data-v-inspector="components/Partials/NavBar.vue:38:6"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										d="M4 6h16M4 12h16M4 18h16"
+										data-v-inspector="components/Partials/NavBar.vue:45:7"
+									></path></svg
+							></span>
+						</button>
+					</div>
+					<div
+						class="block h-0 w-full basis-full overflow-hidden text-blue-gray-900 transition-all duration-300 ease-in lg:hidden"
+						data-collapse="sticky-navar"
+						data-v-inspector="components/Partials/NavBar.vue:54:3"
+					>
+						<ul
+							class="mt-2 mb-4 flex flex-col gap-2 pb-2"
+							data-v-inspector="components/Partials/NavBar.vue:58:4"
+						>
+							<li
+								class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+								data-v-inspector="components/Partials/NavBar.vue:59:5"
+							>
+								<a
+									class="flex items-center"
+									href="#"
+									data-v-inspector="components/Partials/NavBar.vue:62:6"
+								>
+									Pages
+								</a>
+							</li>
+							<li
+								class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+								data-v-inspector="components/Partials/NavBar.vue:64:5"
+							>
+								<a
+									class="flex items-center"
+									href="#"
+									data-v-inspector="components/Partials/NavBar.vue:67:6"
+								>
+									Account
+								</a>
+							</li>
+							<li
+								class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+								data-v-inspector="components/Partials/NavBar.vue:69:5"
+							>
+								<a
+									class="flex items-center"
+									href="#"
+									data-v-inspector="components/Partials/NavBar.vue:72:6"
+								>
+									Blocks
+								</a>
+							</li>
+							<li
+								class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+								data-v-inspector="components/Partials/NavBar.vue:74:5"
+							>
+								<a
+									class="flex items-center"
+									href="#"
+									data-v-inspector="components/Partials/NavBar.vue:77:6"
+								>
+									Docs
+								</a>
+							</li>
+							<button
+								class="mb-2 block w-full rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+								type="button"
+								data-ripple-light="true"
+								data-v-inspector="components/Partials/NavBar.vue:79:5"
+							>
+								<span data-v-inspector="components/Partials/NavBar.vue:84:6"
+									>Buy Now</span
+								>
+							</button>
+						</ul>
+					</div>
+				</nav>
+				<!--[-->
+				<div data-v-inspector="pages/index.vue:4:2">
+					<!--Header-->
+					<div
+						class="w-full m-0 p-0 bg-cover bg-bottom"
+						style="height: 50vh; max-height: 360px; aspect-ratio: 2/1"
+						data-v-inspector="pages/index.vue:6:3"
+					>
+						<img
+							src="/_nuxt/assets/images/cover.jpg"
+							class="w-full h-full object-cover"
+							alt="blog cover image"
+							data-v-inspector="pages/index.vue:10:4"
+						/>
+					</div>
+					<!--Container-->
+					<div
+						class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32"
+						data-v-inspector="pages/index.vue:18:3"
+					>
+						<div class="mx-0 sm:mx-6" data-v-inspector="pages/index.vue:19:4">
+							<div
+								class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t"
+								data-v-inspector="pages/index.vue:20:5"
+							>
+								<!--Lead Card-->
+								<div
+									class="flex h-full bg-white rounded overflow-hidden shadow-lg"
+									data-v-inspector="pages/index.vue:24:6"
+								>
+									<a
+										href="#"
+										class="flex flex-wrap no-underline hover:no-underline"
+										data-v-inspector="pages/index.vue:25:7"
+										><div
+											class="w-full md:w-2/3 rounded-t"
+											data-v-inspector="pages/index.vue:26:8"
+										>
+											<img
+												src="https://source.unsplash.com/collection/494263/800x600"
+												class="h-full w-full shadow"
+												data-v-inspector="pages/index.vue:27:9"
+											/>
+										</div>
+										<div
+											class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink"
+											data-v-inspector="pages/index.vue:33:8"
+										>
+											<div
+												class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+												data-v-inspector="pages/index.vue:34:9"
+											>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6"
+													data-v-inspector="pages/index.vue:37:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:40:10"
+												>
+													👋 Welcome fellow Tailwind CSS and Ghost fan
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:43:10"
+												>
+													This starter template is an attempt to replicate the
+													default Ghost theme &quot;Casper&quot; using Tailwind
+													CSS and vanilla Javascript.
+												</p>
+											</div>
+											<div
+												class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+												data-v-inspector="pages/index.vue:50:9"
+											>
+												<div
+													class="flex items-center justify-between"
+													data-v-inspector="pages/index.vue:53:10"
+												>
+													<img
+														class="w-8 h-8 rounded-full mr-4 avatar"
+														data-tippy-content="Author Name"
+														src="http://i.pravatar.cc/300"
+														alt="Avatar of Author"
+														data-v-inspector="pages/index.vue:54:11"
+													/>
+													<p
+														class="text-gray-600 text-xs md:text-sm"
+														data-v-inspector="pages/index.vue:60:11"
+													>
+														1 MIN READ
+													</p>
+												</div>
+											</div>
+										</div></a
+									>
+								</div>
+								<!--/Lead Card--><!--Posts Container-->
+								<div
+									class="flex flex-wrap justify-between pt-12 -mx-6"
+									data-v-inspector="pages/index.vue:69:6"
+								>
+									<!--1/3 col -->
+									<div
+										class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:71:7"
+									>
+										<div
+											class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:74:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:77:9"
+												><img
+													src="https://source.unsplash.com/collection/225/800x600"
+													class="h-64 w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:81:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:85:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:88:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:91:10"
+												>
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Aliquam at ipsum eu nunc commodo posuere et sit
+													amet ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:97:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:100:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:101:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:107:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--1/3 col -->
+									<div
+										class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:113:7"
+									>
+										<div
+											class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:116:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:119:9"
+												><img
+													src="https://source.unsplash.com/collection/3106804/800x600"
+													class="h-64 w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:123:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:127:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:130:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:133:10"
+												>
+													Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. ipsum dolor sit amet, consectetur adipiscing
+													elit. Aliquam at ip Aliquam at ipsum eu nunc commodo
+													posuere et sit amet ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:141:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:144:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:145:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:151:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--1/3 col -->
+									<div
+										class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:157:7"
+									>
+										<div
+											class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:160:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:163:9"
+												><img
+													src="https://source.unsplash.com/collection/539527/800x600"
+													class="h-64 w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:167:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:171:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:174:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:177:10"
+												>
+													Lorem ipsum eu nunc commodo posuere et sit amet
+													ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:182:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:185:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:186:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:192:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--1/2 col -->
+									<div
+										class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:198:7"
+									>
+										<div
+											class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:201:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:204:9"
+												><img
+													src="https://source.unsplash.com/collection/3657445/800x600"
+													class="h-full w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:208:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:212:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:215:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:218:10"
+												>
+													Lorem ipsum eu nunc commodo posuere et sit amet
+													ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:223:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:226:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:227:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:233:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--1/2 col -->
+									<div
+										class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:239:7"
+									>
+										<div
+											class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:242:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:245:9"
+												><img
+													src="https://source.unsplash.com/collection/764827/800x600"
+													class="h-full w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:249:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:253:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:256:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:259:10"
+												>
+													Lorem ipsum eu nunc commodo posuere et sit amet
+													ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:264:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:267:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:268:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:274:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--2/3 col -->
+									<div
+										class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:280:7"
+									>
+										<div
+											class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:283:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:286:9"
+												><img
+													src="https://source.unsplash.com/collection/325867/800x600"
+													class="h-full w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:290:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:294:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:297:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:300:10"
+												>
+													Lorem ipsum eu nunc commodo posuere et sit amet
+													ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:305:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:308:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:309:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:315:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+									<!--1/3 col -->
+									<div
+										class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+										data-v-inspector="pages/index.vue:321:7"
+									>
+										<div
+											class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+											data-v-inspector="pages/index.vue:324:8"
+										>
+											<a
+												href="#"
+												class="flex flex-wrap no-underline hover:no-underline"
+												data-v-inspector="pages/index.vue:327:9"
+												><img
+													src="https://source.unsplash.com/collection/1118905/800x600"
+													class="h-full w-full rounded-t pb-6"
+													data-v-inspector="pages/index.vue:331:10"
+												/>
+												<p
+													class="w-full text-gray-600 text-xs md:text-sm px-6"
+													data-v-inspector="pages/index.vue:335:10"
+												>
+													GETTING STARTED
+												</p>
+												<div
+													class="w-full font-bold text-xl text-gray-900 px-6"
+													data-v-inspector="pages/index.vue:338:10"
+												>
+													Lorem ipsum dolor sit amet.
+												</div>
+												<p
+													class="text-gray-800 font-serif text-base px-6 mb-5"
+													data-v-inspector="pages/index.vue:341:10"
+												>
+													Lorem ipsum eu nunc commodo posuere et sit amet
+													ligula.
+												</p></a
+											>
+										</div>
+										<div
+											class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
+											data-v-inspector="pages/index.vue:346:8"
+										>
+											<div
+												class="flex items-center justify-between"
+												data-v-inspector="pages/index.vue:349:9"
+											>
+												<img
+													class="w-8 h-8 rounded-full mr-4 avatar"
+													data-tippy-content="Author Name"
+													src="http://i.pravatar.cc/300"
+													alt="Avatar of Author"
+													data-v-inspector="pages/index.vue:350:10"
+												/>
+												<p
+													class="text-gray-600 text-xs md:text-sm"
+													data-v-inspector="pages/index.vue:356:10"
+												>
+													1 MIN READ
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/ Post Content-->
+							</div>
+							<!--Subscribe-->
+							<div
+								class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center"
+								data-v-inspector="pages/index.vue:365:5"
+							>
+								<h2
+									class="font-bold break-normal text-2xl md:text-4xl"
+									data-v-inspector="pages/index.vue:368:6"
+								>
+									Subscribe to Ghostwind CSS
+								</h2>
+								<h3
+									class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl"
+									data-v-inspector="pages/index.vue:371:6"
+								>
+									Get the latest posts delivered right to your inbox
+								</h3>
+								<div
+									class="w-full text-center pt-4"
+									data-v-inspector="pages/index.vue:376:6"
+								>
+									<form action="#" data-v-inspector="pages/index.vue:377:7">
+										<div
+											class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center"
+											data-v-inspector="pages/index.vue:378:8"
+										>
+											<input
+												type="email"
+												placeholder="youremail@example.com"
+												class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none"
+												data-v-inspector="pages/index.vue:381:9"
+											/><button
+												type="submit"
+												class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400"
+												data-v-inspector="pages/index.vue:386:9"
+											>
+												Subscribe
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- /Subscribe-->
+						</div>
+					</div>
+				</div>
+				<!--]-->
+			</div>
+		</div>
+		<script type="application/json" id="__NUXT_DATA__" data-ssr="true">
+			[
+				["Reactive", 1],
+				{ "data": 2, "state": 3, "_errors": 6, "serverRendered": 7, "path": 8 },
+				{},
+				{ "$s__nuxt_devtools__": 4 },
+				{ "timeSsrStart": 5 },
+				1699003309940,
+				{},
+				true,
+				"/"
+			]
+		</script>
+		<script>
+			window.__NUXT__ = {};
+			window.__NUXT__.config = {
+				public: {},
+				app: { baseURL: "/", buildAssetsDir: "/_nuxt/", cdnURL: "" },
+			};
+		</script>
+	</body>
+</html>
